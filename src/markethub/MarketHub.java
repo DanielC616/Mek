@@ -20,9 +20,12 @@ public class MarketHub {
         
     }
     
-    public Seller getSeller(int id){
-        for (){
-            
+    public User getSeller(int id){
+        for (User user: this.users){
+            if(user.id == id){
+                return user;
+            }
         }
+        return null;
     }
 }
