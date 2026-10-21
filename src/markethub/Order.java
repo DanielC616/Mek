@@ -25,6 +25,31 @@ public class Order {
         this.date = date;
         this.products = new ArrayList<>();
         this.client = client;
+        this.status = Status.PENDING;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
     }
 
     public List<Product> getProducts() {
