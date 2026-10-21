@@ -36,7 +36,7 @@ public class MarketHub {
         Store store = new Store(name,creationDate,seller);
     }
 
-    Store getStore(int index) {
+    public Store getStore(int index) {
         return this.stores.get(index);
     }
 }

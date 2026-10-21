@@ -25,6 +25,10 @@ public class Store {
         this.owner.setStore(this);
     }
 
+    void createProduct(String laptop, String high_performance_laptop, double d, String electronics, int i) {
+        
+    }
+
     
     
 }
