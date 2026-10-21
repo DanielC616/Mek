@@ -36,7 +36,7 @@ public abstract class User {
         return email;
     }
 
-    public Date getRegistrationDate() {
+    public LocalDate getRegistrationDate() {
         return registrationDate;
     }
     
