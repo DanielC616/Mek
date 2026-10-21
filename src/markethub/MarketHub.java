@@ -45,7 +45,6 @@ public class MarketHub {
         return null;
     }
     
-    
     public void createStore(String name, LocalDate creationDate, User seller) {
         Store store = new Store(name,creationDate,seller);
     }

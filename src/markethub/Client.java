@@ -26,5 +26,11 @@ public class Client extends User{
         this.orders.add(order);
     }
     
+    public void addProductToOrder(int id, Product productToAdd, int i){
+        for(Order order: this.orders){
+            if(order.)
+        }
+    }
+    
     
 }
