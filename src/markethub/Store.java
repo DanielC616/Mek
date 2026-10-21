@@ -22,6 +22,7 @@ public class Store {
         this.name = name;
         this.creationDate = creationDate;
         this.owner = (Seller)seller;
+        this.owner.setStore(this);
     }
 
     
