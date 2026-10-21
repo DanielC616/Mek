@@ -52,10 +52,12 @@ public class Client extends User{
     
     public void cancelOrder(int i) {
         Order order = getOrder(i);
-        order.setStatus(Status.CANCELED);
+        if (order.getStatus() == Status.SENT){
        for (Element element : order.getProducts()){
            element.getProduct().addInventoryQuantity(element.getQuantity());
        }
+        }
+       order.setStatus(Status.CANCELED);
     }
     
     public void addProductToOrder(int id, Product productToAdd, int i){
