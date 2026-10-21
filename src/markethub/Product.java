@@ -9,5 +9,8 @@ package markethub;
  * @author Revan
  */
 public class Product {
-    
+    private String name,description;
+    private float price;
+    private String category;
+    private int inventoryQuantity;
 }

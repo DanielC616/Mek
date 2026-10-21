@@ -9,5 +9,7 @@ package markethub;
  * @author Revan
  */
 public class Element {
-    
+    private Product product;
+    private int quantity;
+    private float price;
 }

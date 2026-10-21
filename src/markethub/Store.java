@@ -4,10 +4,19 @@
  */
 package markethub;
 
+import java.util.Date;
+import java.util.List;
+
 /**
  *
  * @author Revan
  */
 public class Store {
+    private String name;
+    private Date creationDate;
+    private Seller owner;
+    private List<Product> products;
+
+    
     
 }

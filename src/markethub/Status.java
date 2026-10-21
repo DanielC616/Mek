@@ -8,6 +8,9 @@ package markethub;
  *
  * @author Revan
  */
-public class Status {
-    
+public enum Status {
+    PENDING,
+    SENT,
+    DELIVERED,
+    CANCELED
 }
