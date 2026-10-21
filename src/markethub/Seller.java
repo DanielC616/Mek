@@ -18,6 +18,14 @@ public class Seller extends User{
         super(id, name, email, registrationDate);
         this.store = null;
     }
+
+    public Store getStore() {
+        return store;
+    }
+
+    public void setStore(Store store) {
+        this.store = store;
+    }
     
     
 }

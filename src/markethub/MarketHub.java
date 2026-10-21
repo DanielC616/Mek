@@ -31,6 +31,6 @@ public class MarketHub {
     }
 
     void createStore(String name, LocalDate creationDate, User seller) {
-        Store store = new Store(String name, LocalDate creationDate, User seller);
+        Store store = new Store(name,creationDate,seller);
     }
 }
