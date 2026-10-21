@@ -25,6 +25,19 @@ public class Client extends User{
         Order order = new Order(id,date,this);
         this.orders.add(order);
     }
+    public Order getOrder(int id){
+        for(Order order : this.orders){
+            if(order.getId()==id){
+                return order;
+            }
+        }
+        return null;
+    }
+
+    public void confirmOrder(int orderId) {
+        Order order = getOrder(orderId);
+        order.setStatus(Status.SENT);
+    }
     
     
 }
