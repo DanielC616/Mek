@@ -56,7 +56,13 @@ public class MarketHub {
     public void storeSummary(){
         for(Store store: this.stores){
             System.out.println("Store Summary:");
-            System.out.println("-Owner name: " + );
+            System.out.println("-Owner name: " + store.getOwner().getName());
+            System.out.println("-Owner contact email: " + store.getOwner().getEmail());
+            System.out.println("Created at: " + store.getCreationDate());
+            System.out.println("-Product Inventory:");
+            for(Product product: store.getProducts()){
+                System.out.println("-" + product.getName() + " stock: " + product.getInventoryQuantity());
+            }
         }
     }
     

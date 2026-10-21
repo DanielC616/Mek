@@ -34,6 +34,39 @@ public class Store {
         return this.products.get(index);
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public LocalDate getCreationDate() {
+        return creationDate;
+    }
+
+    public void setCreationDate(LocalDate creationDate) {
+        this.creationDate = creationDate;
+    }
+
+    public Seller getOwner() {
+        return owner;
+    }
+
+    public void setOwner(Seller owner) {
+        this.owner = owner;
+    }
+
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Product> products) {
+        this.products = products;
+    }
+
+    
     
     
 }
