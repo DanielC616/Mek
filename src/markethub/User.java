@@ -15,4 +15,13 @@ public abstract class User {
     protected String name;
     protected String email;
     protected Date registrationDate;
+
+    public User(int id, String name, String email, Date registrationDate) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.registrationDate = registrationDate;
+    }
+    
+    
 }
