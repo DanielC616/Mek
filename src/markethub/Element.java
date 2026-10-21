@@ -18,5 +18,18 @@ public class Element {
         this.quantity = quantity;
         this.price = this.product.getPrice();
     }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+    
     
 }

@@ -61,6 +61,9 @@ public class Product {
     public void setInventoryQuantity(int inventoryQuantity) {
         this.inventoryQuantity = inventoryQuantity;
     }
+    public void addInventoryQuantity(int add){
+        inventoryQuantity+=add;
+    }
     
     
 }
