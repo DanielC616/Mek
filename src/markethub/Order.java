@@ -8,7 +8,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import static markethub.Status.PENDING;
 
 /**
  *
@@ -26,7 +25,7 @@ public class Order {
         this.date = date;
         this.products = new ArrayList<>();
         this.client = client;
-        this.status = PENDING;
+        this.status = Status.PENDING;
     }
 
     public int getId() {
