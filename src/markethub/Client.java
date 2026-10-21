@@ -53,9 +53,10 @@ public class Client extends User{
     }
     
     public void addProductToOrder(int id, Product productToAdd, int i){
+        Element element = new Element(productToAdd, i);
         for(Order order: this.orders){
             if(order.getId() == id){
-                order.addProduct(productToAdd);
+                order.addProduct(element);
             }
         }
     }

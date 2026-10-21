@@ -54,6 +54,10 @@ public class MarketHub {
     }
     
     public void storeSummary(){
+        for(Store store: this.stores){
+            System.out.println("Store Summary:");
+            System.out.println("-Owner name: " + );
+        }
     }
     
     public void clientOrderSummary(){

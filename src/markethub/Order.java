@@ -51,7 +51,10 @@ public class Order {
     public void setStatus(Status status) {
         this.status = status;
     }
-
+    
+    public void addProduct(Element element){
+        this.products.add(element);
+    }
     
     
     
