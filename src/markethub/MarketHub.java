@@ -31,12 +31,16 @@ public class MarketHub {
         }
         return null;
     }
-
-    void createStore(String name, LocalDate creationDate, User seller) {
+    
+    public void addUser(User user){
+        this.users.add(user);
+    }
+    
+    public void createStore(String name, LocalDate creationDate, User seller) {
         Store store = new Store(name,creationDate,seller);
     }
 
-    Store getStore(int index) {
+    public Store getStore(int index) {
         return this.stores.get(index);
     }
 }
