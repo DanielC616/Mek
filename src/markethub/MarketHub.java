@@ -52,4 +52,10 @@ public class MarketHub {
     public Store getStore(int index) {
         return this.stores.get(index);
     }
+    
+    public void storeSummary(){
+    }
+    
+    public void clientOrderSummary(){
+    }
 }
