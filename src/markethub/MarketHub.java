@@ -4,6 +4,7 @@
  */
 package markethub;
 
+import java.time.LocalDate;
 import java.util.List;
 
 /**
@@ -27,5 +28,9 @@ public class MarketHub {
             }
         }
         return null;
+    }
+
+    void createStore(String name, LocalDate creationDate, User seller) {
+        Store store = new Store(String name, LocalDate creationDate, User seller);
     }
 }

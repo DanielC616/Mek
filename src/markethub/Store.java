@@ -4,6 +4,7 @@
  */
 package markethub;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
@@ -13,9 +14,15 @@ import java.util.List;
  */
 public class Store {
     private String name;
-    private Date creationDate;
+    private LocalDate creationDate;
     private Seller owner;
     private List<Product> products;
+    
+    public Store(String name, LocalDate creationDate, User seller){
+        this.name = name;
+        this.creationDate = creationDate;
+        this.owner = (Seller)seller;
+    }
 
     
     
