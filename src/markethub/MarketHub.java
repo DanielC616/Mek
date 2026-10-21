@@ -5,6 +5,7 @@
 package markethub;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,7 +19,8 @@ public class MarketHub {
    
 
     public MarketHub(){
-        
+        this.users = new ArrayList<>();
+        this.stores = new ArrayList<>();
     }
     
     public User getSeller(int id){
@@ -32,5 +34,9 @@ public class MarketHub {
 
     void createStore(String name, LocalDate creationDate, User seller) {
         Store store = new Store(name,creationDate,seller);
+    }
+
+    Store getStore(int index) {
+        return this.stores.get(index);
     }
 }
