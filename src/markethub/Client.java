@@ -42,7 +42,7 @@ public class Client extends User{
 
     public void confirmOrder(int orderId) {
         Order order = getOrder(orderId);
-        order.setStatus(Status.SENT);
+        order.confirmOrder();
     }
 
     public void receiveOrder(int i) {

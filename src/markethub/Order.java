@@ -65,6 +65,19 @@ public class Order {
         this.id = id;
     }
 
+    public void confirmOrder() {
+        for(Element element : this.products){
+            Product product = element.getProduct();
+            if(product.getInventoryQuantity()>0){
+                product.consume(element.getQuantity());
+                this.status = Status.SENT;
+            }
+            else{
+                
+            }
+        }
+    }
+
     
     
 }
