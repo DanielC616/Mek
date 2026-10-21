@@ -44,7 +44,7 @@ public class Order {
         return status;
     }
 
-    public List<Product> getProducts() {
+    public List<Element> getProducts() {
         return products;
     }
 
@@ -52,45 +52,16 @@ public class Order {
         this.status = status;
     }
 
-    public List<Product> getProducts() {
-        return products;
-    }
     
-    public void addProduct(Product product){
-        this.products.add(product);
-    }
+    
+    
 
-    public int getId() {
-        return id;
-    }
+    
 
     public void setId(int id) {
         this.id = id;
     }
 
-    public Client getClient() {
-        return client;
-    }
-
-    public void setClient(Client client) {
-        this.client = client;
-    }
-
-    public LocalDate getDate() {
-        return date;
-    }
-
-    public void setDate(LocalDate date) {
-        this.date = date;
-    }
-
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
-    }
     
     
 }
