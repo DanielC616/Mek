@@ -4,6 +4,7 @@
  */
 package markethub;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -17,4 +18,12 @@ public class Order {
     private Date date;
     private Status status;
     private List<Product> products;
+
+    public Order(int id, Date date) {
+        this.id = id;
+        this.date = date;
+        this.products = new ArrayList<>();
+    }
+    
+    
 }
