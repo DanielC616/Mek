@@ -12,4 +12,11 @@ public class Element {
     private Product product;
     private int quantity;
     private float price;
+
+    public Element(Product product, int quantity) {
+        this.product = product;
+        this.quantity = quantity;
+        this.price = this.product.getPrice();
+    }
+    
 }

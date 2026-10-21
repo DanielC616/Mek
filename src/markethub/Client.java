@@ -47,7 +47,9 @@ public class Client extends User{
     public void cancelOrder(int i) {
         Order order = getOrder(i);
         order.setStatus(Status.CANCELED);
-       
+       for (Element element : order.getProducts()){
+           
+       }
     }
     
     public void addProductToOrder(int id, Product productToAdd, int i){
