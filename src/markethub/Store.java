@@ -5,6 +5,7 @@
 package markethub;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -23,10 +24,14 @@ public class Store {
         this.creationDate = creationDate;
         this.owner = (Seller)seller;
         this.owner.setStore(this);
+        this.products = new ArrayList<>();
     }
 
     public void createProduct(String laptop, String high_performance_laptop, double d, String electronics, int i) {
         Product product = new Product(laptop,high_performance_laptop, (float) d,electronics,i);
+    }
+    public Product getProduct(int index){
+        return this.products.get(index);
     }
 
     
