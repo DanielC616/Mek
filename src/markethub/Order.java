@@ -18,7 +18,7 @@ public class Order {
     private Client client;
     private LocalDate date;
     private Status status;
-    private List<Product> products;
+    private List<Element> products;
 
     public Order(int id, LocalDate date, Client client) {
         this.id = id;

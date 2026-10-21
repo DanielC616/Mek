@@ -38,6 +38,17 @@ public class Client extends User{
         Order order = getOrder(orderId);
         order.setStatus(Status.SENT);
     }
+
+    public void receiveOrder(int i) {
+        Order order = getOrder(i);
+        order.setStatus(Status.DELIVERED);
+    }
+    
+    public void cancelOrder(int i) {
+        Order order = getOrder(i);
+        order.setStatus(Status.CANCELED);
+       
+    }
     
     
 }
