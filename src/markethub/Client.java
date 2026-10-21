@@ -48,7 +48,7 @@ public class Client extends User{
         Order order = getOrder(i);
         order.setStatus(Status.CANCELED);
        for (Element element : order.getProducts()){
-           element.getProduct()
+           element.getProduct().addInventoryQuantity(element.getQuantity());
        }
     }
     
