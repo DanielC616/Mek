@@ -64,6 +64,9 @@ public class Product {
     public void addInventoryQuantity(int add){
         inventoryQuantity+=add;
     }
+    public void consume(int add){
+        inventoryQuantity-=add;
+    }
     
     
 }
