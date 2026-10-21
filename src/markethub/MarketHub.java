@@ -36,14 +36,16 @@ public class MarketHub {
         this.users.add(user);
     }
     
-    public User getClient(int id){
-        for(Client client: this.users){
+    public Client getClient(int id){
+        for(User client: this.users){
             if(client.getId() == id){
-                return client;
+                return (Client)client;
             }
         }
         return null;
     }
+    
+    
     public void createStore(String name, LocalDate creationDate, User seller) {
         Store store = new Store(name,creationDate,seller);
     }
