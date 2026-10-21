@@ -4,17 +4,25 @@
  */
 package markethub;
 
+import java.util.List;
+
 /**
  *
  * @author Revan
  */
 public class MarketHub {
+    
+    private List<User> users;
+    private List<Store> stores;
+   
 
-    /**
-     * @param args the command line arguments
-     */
     public MarketHub(){
         
     }
     
+    public Seller getSeller(int id){
+        for (){
+            
+        }
+    }
 }
