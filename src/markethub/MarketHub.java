@@ -13,5 +13,8 @@ public class MarketHub {
     /**
      * @param args the command line arguments
      */
+    public MarketHub(){
+        
+    }
     
 }
