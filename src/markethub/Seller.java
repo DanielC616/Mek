@@ -4,10 +4,19 @@
  */
 package markethub;
 
+import java.util.Date;
+
 /**
  *
  * @author Luis
  */
 public class Seller extends User{
     private Store store;
+
+    public Seller(int id, String name, String email, Date registrationDate) {
+        super(id, name, email, registrationDate);
+        this.store = null;
+    }
+    
+    
 }
