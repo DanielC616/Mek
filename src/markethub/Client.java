@@ -21,6 +21,12 @@ public class Client extends User{
         this.orders = new ArrayList<>();
     }
 
+    public List<Order> getOrders() {
+        return orders;
+    }
+    
+    
+
     public void makeOrder(int id, LocalDate date) {
         Order order = new Order(id,date,this);
         this.orders.add(order);

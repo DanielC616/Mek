@@ -68,4 +68,24 @@ public class MarketHub {
     
     public void clientOrderSummary(){
     }
+    
+    public Client getClientMostSpent(){
+        double highestPaid = 0, current = 0;
+        int index = 0;
+        for(User user: this.users){
+            if(user instanceof Client){
+                Client client = (Client) user;
+                for(Order order: client.getOrders()){
+                    for(Element element: order.getProducts()){
+                        current =+ element.getPrice();
+                    }
+                }
+            }
+            if(current > highestPaid){
+                highestPaid = current;
+                index = user.getId();
+            }
+        }
+        return getClient(index);
+    }
 }
