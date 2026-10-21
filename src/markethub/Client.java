@@ -4,6 +4,7 @@
  */
 package markethub;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -15,7 +16,7 @@ import java.util.List;
 public class Client extends User{
     private List<Order> orders;
 
-    public Client(int id, String name, String email, Date registrationDate) {
+    public Client(int id, String name, String email, LocalDate registrationDate) {
         super(id, name, email, registrationDate);
         this.orders = new ArrayList<>();
     }

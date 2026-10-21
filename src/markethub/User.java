@@ -4,6 +4,7 @@
  */
 package markethub;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -14,9 +15,9 @@ public abstract class User {
     protected int id;
     protected String name;
     protected String email;
-    protected Date registrationDate;
+    protected LocalDate registrationDate;
 
-    public User(int id, String name, String email, Date registrationDate) {
+    public User(int id, String name, String email, LocalDate registrationDate) {
         this.id = id;
         this.name = name;
         this.email = email;

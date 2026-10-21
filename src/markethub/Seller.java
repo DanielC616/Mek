@@ -4,6 +4,7 @@
  */
 package markethub;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -13,7 +14,7 @@ import java.util.Date;
 public class Seller extends User{
     private Store store;
 
-    public Seller(int id, String name, String email, Date registrationDate) {
+    public Seller(int id, String name, String email, LocalDate registrationDate) {
         super(id, name, email, registrationDate);
         this.store = null;
     }
