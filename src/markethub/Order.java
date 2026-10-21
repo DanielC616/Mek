@@ -20,10 +20,11 @@ public class Order {
     private Status status;
     private List<Product> products;
 
-    public Order(int id, LocalDate date) {
+    public Order(int id, LocalDate date, Client client) {
         this.id = id;
         this.date = date;
         this.products = new ArrayList<>();
+        this.client = client;
     }
     
     

@@ -20,6 +20,11 @@ public class Client extends User{
         super(id, name, email, registrationDate);
         this.orders = new ArrayList<>();
     }
+
+    public void makeOrder(int id, LocalDate date) {
+        Order order = new Order(id,date,this);
+        this.orders.add(order);
+    }
     
     
 }
